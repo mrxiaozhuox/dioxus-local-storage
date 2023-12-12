@@ -1,0 +1,25 @@
+[package]
+name = "dioxus-local-storage"
+version = "0.4.0"
+authors = ["YuKun Liu<mrxzx.info@gmail.com>"]
+description = "`use_local_storage` hooks for dioxus"
+repository = "https://github.com/mrxiaozhuox/dioxus-local-storage"
+readme = "Readme.md"
+license = "MPL-2.0"
+edition = "2021"
+
+[dependencies]
+dioxus = "0.4.3"
+gloo-events = "0.1.2"
+log = "0.4.17"
+wasm-bindgen = "0.2.84"
+
+[dependencies.web-sys]
+version = "0.3.61"
+features = ["Window", "Storage", "StorageEvent"]
+
+
+[dev-dependencies]
+
+[features]
+default = []
